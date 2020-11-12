@@ -30,6 +30,7 @@
 #RESPONSIVE DESIGN
 */
 
+
 /* BASE - Base tyles, Variables, Mixins, etc. */
 body {
   background-color: #ffffff;
@@ -423,19 +424,20 @@ img {
   width: 100%;
 }
 #mu-service .mu-service-area .mu-service-single {
-  background-color: #01bafd;
+  background-color: #FF652F;
   color: #fff;
   display: inline;
   float: left;
   padding: 35px 25px;
   text-align: center;
   width: 33.33%;
+  border-radius: 20px;
 }
 #mu-service .mu-service-area .mu-service-single:nth-child(2) {
-  background-color: #2ecc71;
+  background-color: #A64Ac9;
 }
 #mu-service .mu-service-area .mu-service-single:nth-child(3) {
-  background-color: #45a0de;
+  background-color: #14A76c;
 }
 #mu-service .mu-service-area .mu-service-single span {
   font-size: 30px;
@@ -558,7 +560,8 @@ img {
  ABOUT US COUNTER SECTION
 ====================*/
 #mu-abtus-counter {
-  background-image: url("../img/gray.jpg");
+  /* background-image: url("../img/gray.jpg"); */
+  background-color: #01bafd;
   background-repeat: no-repeat;
   background-size: 100%;
   display: inline;
@@ -1014,6 +1017,11 @@ img {
  FROM BLOG SECTION
 ====================*/
 #mu-from-blog {
+  background: url(../img/toppers-bg.png);
+  /* opacity: 0.1; */
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-color: #fff;
   display: inline;
   float: left;
   padding: 100px 0;
@@ -1108,7 +1116,7 @@ img {
  COURSES PAGE
 ====================*/
 #mu-page-breadcrumb {
-  background-color: #333;
+  background-image: url(../img/header-breadcrumb-bg.jpg);
   display: inline;
   float: left;
   padding: 30px 0;
@@ -2176,7 +2184,7 @@ img {
   }
 
   #mu-menu .navbar-header .navbar-brand {
-    padding-top: 10px;
+    padding-top: -10px;
   }
 
   #mu-search-icon {

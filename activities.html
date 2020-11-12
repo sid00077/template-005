@@ -38,7 +38,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  
+
 
 </head>
 
@@ -46,6 +46,26 @@
   div {
     text-align: justify;
     text-justify: inter-word;
+  }
+
+  .p-text {
+    margin-top: 19px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    padding: 12px;
+  }
+
+  .text-center {
+    margin-top: 15px;
+  }
+
+  .ab-img {
+    margin-bottom: 19px;
+  }
+
+  .imgs {
+    border: 2px solid black;
+    border-radius: 20px;
   }
 </style>
 
@@ -58,7 +78,7 @@
   <!-- END SCROLL TOP BUTTON -->
 
   <!-- Start header  -->
-  <header id="mu-header">
+  <header id="mu-header" style="background-color: #2D0320;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12">
@@ -67,28 +87,28 @@
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                 <div class="mu-header-top-left">
                   <div class="mu-top-email">
-                    <i class="fa fa-envelope"></i>
-                    <span>info@markups.io</span>
+                    <i style="color: #fff;" class="fa fa-envelope"></i>
+                    <span style="color: #fff;">sboa.abad@gmail.com</span>
                   </div>
                   <div class="mu-top-phone">
-                    <i class="fa fa-phone"></i>
-                    <span>0240 2382003 , 2382004</span>
+                    <i style="color: #fff;" class="fa fa-phone"></i>
+                    <span style="color: #fff;">0240 2382003 , 2382004</span>
                   </div>
                 </div>
               </div>
-              <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                 <div class="mu-header-top-right">
                   <nav>
                     <ul class="mu-top-social-nav">
-                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                      <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                      <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                      <li><a style="color: #fff;" href="#"><span class="fa fa-facebook"></span></a></li>
+                      <!-- <li><a style="color: #fff;" href="#"><span class="fa fa-twitter"></span></a></li> -->
+                      <!-- <li><a style="color: #fff;" href="#"><span class="fa fa-google-plus"></span></a></li> -->
+                      <li><a style="color: #fff;" href="#"><span class="fa fa-linkedin"></span></a></li>
+                      <li><a style="color: #fff;" href="#"><span class="fa fa-youtube"></span></a></li>
                     </ul>
                   </nav>
                 </div>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
@@ -98,7 +118,8 @@
   <!-- End header  -->
   <!-- Start menu -->
   <section id="mu-menu">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-light bg-light sticky-top" style="background-color: #e3f2fd;"
+      role="navigation">
       <div class="container">
         <div class="navbar-header">
           <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
@@ -111,19 +132,20 @@
           </button>
           <!-- LOGO -->
           <!-- TEXT BASED LOGO -->
-          <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i><span>S.B.O.A</span></a>
+          <a class="navbar-brand" href="index.html"> <span> S.B.O.A </span> </a>
           <!-- IMG BASED LOGO  -->
-          <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
+          <!-- <a class="navbar-brand" href="index.html"><img height="42" src="assets/img/SBOA_logo.jpg" alt="logo"></a> -->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
             <li><a href="index.html">Home</a></li>
+
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Result <span
-                  class="fa fa-angle-down"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics<span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="toppers.html">Toppers</a></li>
-                <li><a href="sports.html">Sports</a></li>
+                <li><a href="pre-primary.html">Pre-primary</a></li>                
+                <li><a href="primary.html">primary</a></li>    
+                <li><a href="secondary.html">Secondary</a></li>             
               </ul>
             </li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -132,13 +154,15 @@
               <ul class="dropdown-menu" role="menu">
                 <li><a href="ncc.html">NCC</a></li>
                 <li><a href="trustees.html">Trustees</a></li>
-                <li><a href="about school.html">About School</a></li>
+                <li><a href="aboutschool.html">About School</a></li>
                 <li><a href="teachers.html">Our Teachers</a></li>
+                <li><a href="classroom.html">Classrooms</a></li>
+                <li><a href="sports.html">Sports</a></li>
               </ul>
             </li>
-            <!-- <li><a href="contact.html">Contact</a></li> -->
             <li class="active"><a href="activities.html">Activities</a></li>
-            <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+            <li><a href="#">Login</a></li>
+            <!-- <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li> -->
           </ul>
         </div>
         <!--/.nav-collapse -->
@@ -193,7 +217,8 @@
                   <div class="mu-title">
                     <h2>ANNUAL FUNCTION</h2>
                   </div>
-                  <p>Theme based Annual function in five sessions over the span of 3 days is another special feature of
+                  <p class="d-flex justify-content-start">Theme based Annual function in five sessions over the span of
+                    3 days is another special feature of
                     the school.
                     Under the able guidence of our teachers , the students prepare beautyful invitation cards ,
                     Programme cards , floral bouquet , gift articals etc… to be presented to the guests.
@@ -204,8 +229,8 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-6">
-                <div class="mu-about-us-right">
-                  <img src="assets/img/gallery/small/adf.png" alt="img" style="width:560px;height:300px;">
+                <div class="float-right">
+                  <img class="imgs" src="assets/img/gallery/small/adf.png" alt="Responsive image">
                   </a>
                 </div>
               </div>
@@ -219,8 +244,9 @@
 
   <section>
     <div class="container">
-      <h1>Co-curricular Activities</h1>
-      <p>The school is committed to impart comprehensive and quality education by means of academic as well as
+      <h1><b>Co-curricular Activities</b></h1>
+      <p class="d-flex justify-content-start">The school is committed to impart comprehensive and quality education by
+        means of academic as well as
         co-curricular activities. At S.B.O.A. along with formal education we spread awareness of the Indian culture by
         means of celebrating Indian festivals such as Diwali, Dasehara, Navratri. We give equal importance to the
         celebration to Id, Nagpanchami, Christmas and Holi by performing suitable activities rather than verbal
@@ -233,88 +259,97 @@
       <table class=" table table-hover">
         <thead>
           <tr>
-            <th>Contenet</th>
+            <th>Content</th>
             <th>Image</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>
-              <h3>Children Day:-</h3>
+              <h3 class="d-flex justify-content-start"><b>Children Day:-</b></h3>
               <p>On the occasion of Children’s Day, Child and adolescent health care
                 week was observed in the school. Mrs. Dr. TruptiBorulkar and team
                 visited the school and guided the student on various problems faced by
                 the students due to excessive use of multimedia.</p>
-              <h3>Book Fair at SBOA:-</h3>
-              <p> The Book Fair by the Scholastic publication was organized in the
+              <h3><b>Book Fair at SBOA:-</b></h3>
+              <p class="d-flex justify-content-start"> The Book Fair by the Scholastic publication was organized in the
                 school in the month of November on the occasion of Children’s Day. </p>
             </td>
-            <td> <a href="#"><img src="assets/img/gallery/childrenfair.png" alt="img"></a></td>
+            <td> <a href="#"><img class="imgs" src="assets/img/gallery/childrenfair.png" alt="Responsive image"></a>
+            </td>
           </tr>
 
           <tr>
             <td>
-              <h3>Celebration of National Days:-</h3>
-              <p>We at SBOA celebrate national festivals like Independence Day, Republic Day, Marathwada Muktisangram
-                Divas with great pomp and show in order to imbibe the value of patriotism in the students. The students
+              <h3><b>Celebration of National Days:-</b></h3>
+              <p class="d-flex justify-content-start">We at SBOA celebrate national festivals like Independence Day,
+                Republic Day,
+                Marathwada Muktisangram Divas with great pomp and show in order to imbibe the value of patriotism in the
+                students. The students
                 sing patriotic songs and perform various demonstrations. Every year we also celebrate International Yoga
                 Day on 21st June so that the students understand importance of yoga and practice it daily.
                 MarathwadaMuktisangram Divas</p>
             </td>
-            <td> <a href="#"><img src="assets/img/gallery/nationalday.png" alt="img"></a></td>
+            <td> <a href="#"><img class="imgs" src="assets/img/gallery/nationalday.png" alt="Responsive image"></a></td>
           </tr>
           <tr>
             <td>
-              <h3>Donation of Diwali Sweets:-</h3>
-              <p>Every year we at SBOA appeal the students to bring the sweets to the
+              <h3><b>Donation of Diwali Sweets:-</b></h3>
+              <p class="d-flex justify-content-start">Every year we at SBOA appeal the students to bring the sweets to
+                the
                 school so that they can be donated to the children in orphanages and
                 to the old age homes. This drive enables the children to know their
                 social responsibilities.</p>
             </td>
-            <td> <a href="#"><img src="assets/img/gallery/diwalisweets.png" alt="img"></a>
+            <td> <a href="#"><img class="imgs" src="assets/img/gallery/diwalisweets.png" alt="Responsive image"></a>
             </td>
           </tr>
           <tr>
             <td>
-              <h3>Exhibitions on various topics at SBOA - s:-</h3>
-              <p>Different Exhibitions are also conducted regularly on various subjects like Science, Geography,Drawing,
+              <h3><b>Exhibitions on various topics at SBOA - s:-</b></h3>
+              <p class="d-flex justify-content-start">Different Exhibitions are also conducted regularly on various
+                subjects like Science, Geography,Drawing,
                 Mathematics, Sports,Fun with Stories, craft, Work Experiences, Postal Stamps and Food & Nutrition.</p>
             </td>
-            <td> <a href="#"><img src="assets/img/gallery/art.png" alt="img"></a>
+            <td> <a href="#"><img class="imgs" src="assets/img/gallery/art.png" alt="Responsive image"></a>
             </td>
           </tr>
           <tr>
             <td>
-              <h3>First Aid Training for teachers:-</h3>
-              <p>A team of Doctors from International Association of Pediatrician was
+              <h3><b>First Aid Training for teachers:-</b></h3>
+              <p class="d-flex justify-content-start">A team of Doctors from International Association of Pediatrician
+                was
                 invited to school to give the lessons to the teachers on First Aid in case
                 of medical emergency.</p>
             </td>
-            <td> <a href="#"><img src="assets/img/gallery/FAT.png" alt="img"></a></td>
+            <td> <a href="#"><img class="imgs" src="assets/img/gallery/FAT.png" alt="Responsive image"></a></td>
           </tr>
           <tr>
             <td>
-              <h3>Dr. HomiBhabha Young Scientist exam for Std VI &Std IX :- </h3>
-              <p>Mumbai Science Teachers’ Association conducts Dr. HomiBhabha Young Scientist Exam for Std VI &StdIX .
+              <h3><b>Dr. HomiBhabha Young Scientist exam for Std VI &Std IX :-</b> </h3>
+              <p class="d-flex justify-content-start">Mumbai Science Teachers’ Association conducts Dr. HomiBhabha Young
+                Scientist Exam for Std VI &StdIX .
                 The aim of the exam is to make the next generation students well versed and aware of the scientific
                 developments globally so that they contribute effectively to the scientific research and environment,
                 enhancement within the communities.
                 FifteenStudents of Std IX and Seven Students of Std VI qualified for Second Level Practical Exam.</p>
             </td>
-            <td> <a href="#"><img src="assets/img/gallery/hb.png" alt="img"></a></td>
+            <td> <a href="#"><img class="imgs" src="assets/img/gallery/hb.png" alt="Responsive image"></a></td>
           </tr>
           <tr>
             <td>
-              <h3>National Talent Search Exam :- </h3>
-              <p>One of the Prestigious Exam conducted every year by the Govt. of India. 10 students of our school are
+              <h3><b>National Talent Search Exam :-</b> </h3>
+              <p class="d-flex justify-content-start">One of the Prestigious Exam conducted every year by the Govt. of
+                India. 10 students of our school are
                 successfully cleared National Talent Search Examination first level and they will receive one time
                 scholarship of rupees 1000/-. Master Indrajeet Garse and Master Anshul Kabra has successfully cleared
                 both the Levels and is eligible for the scholarship till his Post Graduation.</p>
 
-              <h3>Maharashtra Talent Search Exam (MTSE) Std VIII to Std X </h3>
-              <p>Stunning performance of the students at MTSE Examination has added a feather in the school cap.</p>
+              <h3><b>Maharashtra Talent Search Exam (MTSE) Std VIII to Std X</b> </h3>
+              <p class="d-flex justify-content-start">Stunning performance of the students at MTSE Examination has added
+                a feather in the school cap.</p>
             </td>
-            <td> <a href="#"><img src="assets/img/gallery/mtse.png" alt="img"></a></td>
+            <td> <a href="#"><img class="imgs" src="assets/img/gallery/mtse.png" alt="Responsive image"></a></td>
           </tr>
         </tbody>
       </table>
@@ -322,53 +357,10 @@
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th>Std</th>
-            <th>State Level</th>
-            <th>District Level</th>
-            <th>Special Prize</th>
-            <th>Consolation Prize</th>
-            <th>Certificate</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>VIII</td>
-            <td>2</td>
-            <td>.... </td>
-            <td>6</td>
-            <td>8</td>
-            <td>40</td>
-          </tr>
-          <tr>
-            <td>XI</td>
-            <td>1</td>
-            <td>3 </td>
-            <td>3</td>
-            <td>9</td>
-            <td>48</td>
-          </tr>
-          <tr>
-            <td>X</td>
-            <td>4</td>
-            <td>2</td>
-            <td>4</td>
-            <td>3</td>
-            <td>27</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
 
   </div>
 
   </section>
-
 
   <!-- Start footer -->
   <footer id="mu-footer">
@@ -377,7 +369,7 @@
       <div class="container">
         <div class="mu-footer-top-area">
           <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-4 col-md-4 col-sm-4">
               <div class="mu-footer-widget">
                 <h4>Information</h4>
                 <ul>
@@ -385,39 +377,29 @@
                   <li><a href="gallery.html">Gallery</a></li>
                   <li><a href="toppers.html">Toppers</a></li>
                   <li><a href="sports.html">Sports</a></li>
-                  
+
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-4 col-md-4 col-sm-4">
               <div class="mu-footer-widget">
-                <h4>.....</h4>
+                <h4>More Information</h4>
                 <ul>
                   <li><a href="ncc.html">NCC</a></li>
                   <li><a href="trustees.html">Trustees</a></li>
-                  <li><a href="about school.html">About School</a></li>
-                  <li><a href="teachers.html">Our Teachers</a></li>
+                  <li><a href="aboutschool.html">About School</a></li>
+                  <li><a href="teachers.html"> Our Teachers</a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="mu-footer-widget">
-                <h4>Newsletter</h4>
-                <p>Get latest update, news & academic offers</p>
-                <form class="mu-subscribe-form">
-                  <input type="email" placeholder="Type your Email">
-                  <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
-                </form>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-4 col-md-4 col-sm-4">
               <div class="mu-footer-widget">
                 <h4>Contact</h4>
                 <address>
-                  <p>P.O. Box 320, India</p>
-                  <p>Phone: +91 87 6649 2541</p>
-                  <p>Website: www.erstellen.tech</p>
-                  <p>Email: admin@erstellen.tech</p>
+                  <p> <i class="fa fa-building"></i> Jalgaon Rd, Hudco, Mayur Nagar, N 11, Cidco, Aurangabad,
+                    Maharashtra 431003</p>
+                  <p><i class="fa fa-phone"></i> 0240 2382003, 2382004</p>
+                  <p><i class="fa fa-envelope"></i> sboa.abad@gmail.com</p>
                 </address>
               </div>
             </div>
@@ -430,7 +412,8 @@
     <div class="mu-footer-bottom">
       <div class="container">
         <div class="mu-footer-bottom-area">
-          <p>&copy; All Right Reserved. Designed by <a href="https://erstellen.tech" target="_blank">Erstellen</a></p>
+          <p>&copy; All Right Reserved 2020. Coded with <i class="fa fa-heart" style="color: slategray;"></i> by <i><a
+                href="https://erstellen.tech" target="_blank"><b> Erstellen.tech </b></a> </i></p>
         </div>
       </div>
     </div>
@@ -442,11 +425,20 @@
 
 
 
-
   <!-- jQuery library -->
   <script src="assets/js/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="assets/js/bootstrap.js"></script>
+  <!-- <script src="assets/js/bootstrap.js"></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
   <!-- Slick slider -->
   <script type="text/javascript" src="assets/js/slick.js"></script>
   <!-- Counter -->
