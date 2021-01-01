@@ -28,17 +28,45 @@
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet'
     type='text/css'>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#myModal").modal('show');
+    });
+  </script>
 
   <style>
-    #more {
+    /* #more {
       display: none;
-    }
+    } */
   </style>
 </head>
 
 <body>
+  <!-- modal strt -->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content"
+        style="background-color: #01BAFD; width:auto;border:3px solid #3066BE ;border-radius:10px;">
+        <div class="modal-header">
+          <h5 class="modal-title"><b style="color: #fff;">Dear All,</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
 
+        <div class="modal-body">
+          <h5 style='color: #fff; text-transform: capitalize;'>
+            Online Classes Timing
+          </h5>
+          <p style='color: #fff;'>
+            1st session( teaching and learning) - 10 a.m. to 2 p.m. <br>
+            2nd session(queries and submission) - 4 p.m. to 7 p.m.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal end -->
   <!--START SCROLL TOP BUTTON -->
   <a class="scrollToTop" href="#">
     <i class="fa fa-angle-up"></i>
@@ -84,7 +112,7 @@
     </div>
   </header>
   <!-- End header  -->
-  
+
   <!-- Start menu -->
   <section id="mu-menu">
     <nav class="navbar navbar-default navbar-light bg-light sticky-top" style="background-color: #e3f2fd;"
@@ -101,7 +129,7 @@
           </button>
           <!-- LOGO -->
           <!-- TEXT BASED LOGO -->
-          <a class="navbar-brand" href="index.html"> <span> S.B.O.A </span> </a>
+          <a class="navbar-brand" href="index.html"> S.B.O.A Public School, A.bad </a>
           <!-- IMG BASED LOGO  -->
           <!-- <a class="navbar-brand" href="index.html"><img height="42" src="assets/img/SBOA_logo.jpg" alt="logo"></a> -->
         </div>
@@ -110,7 +138,8 @@
             <li class="active"><a href="index.html">Home</a></li>
 
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<span class="fa fa-angle-down"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<span
+                  class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="principledesk.html">Principle Desk</a></li>
@@ -123,7 +152,8 @@
             </li>
 
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Facilities<span class="fa fa-angle-down"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Facilities<span
+                  class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="sciencelab.html">Science Lab</a></li>
                 <li><a href="computerlab.html">Computer Lab</a></li>
@@ -170,12 +200,12 @@
       </div>
     </nav>
   </section>
-  <header id="mu-header" style="background-color: #01BAFD;">
+  <header id="mu-header" style="background-color: #3066BE;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12">
-          <marquee style="color: #000; padding: 8px;">
-            Schools will reopen from 31<sup>st</sup> January 2021 
+          <marquee style="color: #fff; padding: 8px;">
+            Schools will reopen from 31<sup>st</sup> January 2021
           </marquee>
         </div>
       </div>
@@ -268,7 +298,8 @@
               <span class="fa fa-user"></span>
               <h3><b>Students</b></h3>
               <p style=" font-style: italic;">"Let's be the good reader, better writers and best problem solvers."
-                <br><br></p>
+                <br><br>
+              </p>
               <p><a class="btn btn-primary btn-lg" href="sciencelab.html"
                   style="background-color: transparent; border:2px solid #000;">Students</a></p>
             </div>
@@ -295,38 +326,14 @@
                   </div>
                   <!-- End Title -->
                   <h4>Welcome to the S.B.O.A. PUBLIC SCHOOL AURANGABAD</h4>
-                  <p>Thank you for visiting us! Whether you are considering S.B.O.A. as your next school or have already
-                    decided to come aboard, we hope you are inspired by our sense of purpose, our commitment to
-                    excellence, and our devotion to the development of each student.
-                  </p>
-                  <h4>Establishment Of The School</h4>
-                  <p>The dream of State Bank of India Officers’ Association’s Education Society came true in June-1999
-                    in the form of a promising Educational Institution. Aurangabad School is honored to be the first
-                    venture of the SBOA Education Society in Maharashtra. The school was established not only to cater
-                    to the needs of the wards of the State Bank of India Officers but also to the society at large. S.
-                    B. O. A. Public School, Aurangabad is open to all the children irrespective of their caste, creed,
-                    region and religion. </P>
-                  <P>
-                    <span id="dots"></span><span id="more"> It follows the system of Co-education and runs on the
-                      Permanent - Non - Grant basis.
-                      With the motto “Educate and Illuminate” the school is providing comprehensive Education to the
-                      students for their all-round development since 1999. The School has set high standard for itself
-                      to achieve their potential for learning. The school has been channelizing student’s potential and
-                      guiding them to attain the ambition they and their parents have by relevant training program, such
-                      as practical demonstrations, orientation and competitive activities.
-                      A small sapling planted 21 years back has grown into a huge banyan tree. In this short span of
-                      time the school has climbed the ladder of success and has reached the summit .170 professionally
-                      sound lady teachers are contributing to illuminate the lives of 3650 students ranging between the
-                      age group of 3 to 15 years.
-                    </span>
-                  </p>
-                  <button class="btn btn-light btn-lg" onclick="myFunction()" id="myBtn"
-                    style="border: none; background-color: #01BAFD; color: #fff;">Read more</button>
 
+                  <h4 style="padding-top: 25px;"> Vision </h4>
+                  <p> <u> <i> To make the students Emotionally, Mentally and Physically strong for new India. </i></u>
+                  </P>
+                  <h4 style="padding-top: 25px;"> Motto </h4>
+                  <p> <u> <i> Educate and illuminate </i> </u></P>
                 </div>
-
               </div>
-
               <div class="col-lg-6 col-md-6" style="border-color: #2D0320;">
                 <div class="mu-about-us-right">
                   <a id="mu-abtus-video" href="https://www.youtube.com/embed/qgn9dF3vTKU" target="mutube-video">
@@ -345,44 +352,37 @@
   <!-- Start about us counter -->
   <section id="mu-abtus-counter">
     <div class="container">
-      <!-- <div class="row" style="margin-left: 62px;"> -->
       <div class="row ">
         <div class="col-md-8">
-          <div class="">
-            <div class="">
               <h1>
                 <i style="color: #000;" class="fa fa-quote-left"></i>
               </h1>
               <h1 style="padding-bottom: 4px;
-             font-size: 30px;
+             font-size: 22px;
              font-weight: 600;
              font-style: italic; color: #fff;">Principal’s Message…</h1>
               <h3 style="padding-bottom: 5px;
-             font-size: 30px;
+             font-size: 22px;
              font-weight: 600;
              font-style: italic; color: #fff;">It is a great pleasure to welcome you to SBOA PUBLIC SCHOOL.</h3>
-              <p style="padding-bottom: 32px;
-             font-size: 30px;
+              <p style="padding-bottom: 15px;
+             font-size: 22px;
              font-weight: 600;
              line-height: 1.6;
-             font-style: italic; color: #fff;">I feel privileged to lead such an exciting and vibrant school. Our goal
-                is to make each and every student to succeed not only in their studies but also in all their future
-                endeavours.
-                We offer our students the best opportunities to become confident and thoughtful young people who are
-                prepared to face any future challenges in this exciting and rapidly changing globalized world.
-                <img class="float-right" style="padding-left:28px;"><i style="color: #000;"
+             font-style: italic; color: #fff;">
+                Every student has lot of potential which needs to be let out. Sometimes they just need a little nudge, a
+                little direction, a little support, a little coaching, and the greatest things can happen which can
+                create history.&nbsp;&nbsp;&nbsp;
+                <img class="float-right"><i style="color: #000;"
                   class="fa fa-quote-right"></i></img>
               </p>
               <p style="margin-top: -65px;"> <b>
                   <h1 style="color: #000;"> _____________ </h1>
                 </b></p>
-
-            </div>
-          </div>
         </div>
         <div class="col-md-4">
-          <img src="assets/img/principal.jpg" class="text-center" alt="Principal- Surekha Mam"
-            style="border: 6px solid #000; padding: 6px; width: 426px; height: 282px; margin-top: 200px;">
+          <img src="assets/img/principal.jpg" width="100%" class="text-center" alt="Principal- Surekha Mam"
+            style="border: 3px solid #000; border-radius: 8px; padding: none; ">
         </div>
 
       </div>
@@ -407,26 +407,26 @@
             <div class="mu-features-content">
               <div class="row">
                 <div class="col-lg-4 col-md-4  col-sm-6">
-                  <div class="mu-single-feature">
+                  <div class="mu-single-feature text-center">
                     <span class="fa fa-book"></span>
-                    <h4>Teachers</h4>
-                    <p>The best teachers teach from the heart, not from the book.</p>
+                    <h4 style="color: #000;">Teachers</h4>
+                    <p style="color: #000;">The best teachers teach from the heart, not from the book.</p>
                     <a href="faculty.html">Read More</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
-                  <div class="mu-single-feature">
+                  <div class="mu-single-feature text-center">
                     <span class="fa fa-users"></span>
-                    <h4>Sports</h4>
-                    <p>A true champion is someone who is bent over, drenched in sweat at the point of exhaustion.</p>
+                    <h4 style="color: #000;">Sports</h4>
+                    <p style="color: #000;">A true champion is someone who is bent over, drenched in sweat at the point of exhaustion.</p>
                     <a href="sports.html">Read More</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
-                  <div class="mu-single-feature">
+                  <div class="mu-single-feature text-center">
                     <span class="fa fa-laptop"></span>
-                    <h4>N C C</h4>
-                    <p>NCC was introduced from 2002-03 academic year for Girls students for Std. 8th to 10th.</p>
+                    <h4 style="color: #000;">N C C</h4>
+                    <p style="color: #000;">NCC was introduced from 2002-03 academic year for Girls students for Std. 8th to 10th.</p>
                     <a href="ncc.html">Read More</a>
                   </div>
                 </div>
@@ -463,84 +463,84 @@
             <!-- start from blog content   -->
             <div class="mu-from-blog-content">
               <div class="row">
-                <div class="col-md-3 col-sm-3">
+                <div class="col-md-3 col-sm-3 text-center">
                   <article class="mu-blog-single-item">
                     <figure class="mu-blog-single-img">
                       <a href="#"><img src="assets/img/Arnavee Sudhir Gite.jpg"
                           style="border-radius: 50%; border: 4px solid #000;" alt="img"></a>
                       <figcaption class="mu-blog-caption">
                         <h3>
-                          <p>ARNAVEE S. GITE</p>
+                          <p style="color: #000;">ARNAVEE S. GITE</p>
                         </h3>
                       </figcaption>
                     </figure>
                     <div class="">
-                      <p>X STD Year 2019-2020</p>
+                      <p style="color: #000;">X STD Year 2019-2020</p>
 
                     </div>
                     <div class="mu-blog-description">
-                      <p>She was one of our brightest students who scored <b
+                      <p style="color: #000;">She was one of our brightest students who scored <b
                           style="font-style: bold;font-weight: 500;">98.60% </b></p>
 
                     </div>
                   </article>
                 </div>
-                <div class="col-md-3 col-sm-3">
+                <div class="col-md-3 col-sm-3 text-center">
                   <article class="mu-blog-single-item">
                     <figure class="mu-blog-single-img">
                       <a href="#"><img src="assets/img/Arpan Jawahar Shitre.jpg"
                           style="border-radius: 50%; border: 4px solid #000;" alt="img"></a>
                       <figcaption class="mu-blog-caption">
                         <h3>
-                          <p> ARPAN J. SHITRE</p>
+                          <p style="color: #000;"> ARPAN J. SHITRE</p>
                         </h3>
                       </figcaption>
                     </figure>
                     <div>
-                      <p>X STD Year 2019-2020</p>
+                      <p style="color: #000;">X STD Year 2019-2020</p>
                     </div>
                     <div class="mu-blog-description">
-                      <p>He was hardworking and smart student who scored <b style="font-style: bold;font-weight: 500;">
+                      <p style="color: #000;">He was hardworking and smart student who scored <b style="font-style: bold;font-weight: 500;">
                           98.20% </b></p>
                     </div>
                   </article>
                 </div>
-                <div class="col-md-3 col-sm-3">
+                <div class="col-md-3 col-sm-3 text-center">
                   <article class="mu-blog-single-item">
                     <figure class="mu-blog-single-img">
                       <a href="#"><img src="assets/img/Kush Rahul Mahajan.jpg"
                           style="border-radius: 50%; border: 4px solid #000;" alt="img"></a>
                       <figcaption class="mu-blog-caption">
                         <h3>
-                          <p>Kush R. Mahajan</p>
+                          <p style="color: #000;">Kush R. Mahajan</p>
                         </h3>
                       </figcaption>
                     </figure>
-                    <p>X STD Year 2019-2020</p>
+                    <p style="color: #000;">X STD Year 2019-2020</p>
 
                     <div class="mu-blog-description">
-                      <p>He was intelligent and have competitive sprit and scored <b
+                      <p style="color: #000;">He was intelligent and have competitive sprit and scored <b
                           style="font-style: bold;font-weight: 500;"> 98%.</b> </p>
                     </div>
                   </article>
                 </div>
-                <div class="col-md-3 col-sm-3">
+                <div class="col-md-3 col-sm-3 text-center">
                   <article class="mu-blog-single-item">
                     <figure class="mu-blog-single-img">
                       <a href="#"><img src="assets/img/ANUSHKA RAVINDRAKUMAR GUTHE.jpg"
                           style="border-radius: 50%; border: 4px solid #000;" alt="img"></a>
                       <figcaption class="mu-blog-caption">
                         <h3>
-                          <p>ANUSHKA R. GUTHE</p>
+                          <p style="color: #000;">ANUSHKA R. GUTHE</p>
                         </h3>
                       </figcaption>
                     </figure>
 
-                    <p>X STD Year 2019-2020</p>
+                    <p style="color: #000;">X STD Year 2019-2020</p>
                     <p> </p>
 
                     <div class="mu-blog-description">
-                      <p>She was intelligent and have competitive sprit and scored <b
+                      <p style="color: #000;">She was intelligent and have competitive sprit and scored <b
                           style="font-style: bold;font-weight: 500;"> 98%. </b> </p>
                     </div>
                   </article>
@@ -618,7 +618,7 @@
   <script src="assets/js/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="assets/js/bootstrap.js"></script>
-  
+
   <!-- Slick slider -->
   <script type="text/javascript" src="assets/js/slick.js"></script>
   <!-- Counter -->
@@ -634,24 +634,6 @@
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
   <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script>
-    function myFunction() {
-      var dots = document.getElementById("dots");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
-
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
-    }
-  </script>
-
 </body>
 
 </html>

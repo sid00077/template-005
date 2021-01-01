@@ -641,8 +641,8 @@ img {
   position: relative;
 }
 #mu-features .mu-features-area .mu-features-content .mu-single-feature h4:after {
-  background-color: #333;
-  content: '';
+  /* background-color: #333; */
+  /* content: ''; */
   left: 0;
   right: 0;
   bottom: 0;
