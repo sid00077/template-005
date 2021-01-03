@@ -1,3 +1,16 @@
+<?php
+include("db_connection.php");
+$sql = 'SELECT announcement_name FROM announcement ORDER BY announcement_id DESC LIMIT 1;';
+$sql1 = 'SELECT * FROM circular ORDER BY circular_id DESC;';
+
+$result = mysqli_query($conn, $sql);
+$result1 = mysqli_query($conn, $sql1);
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,13 +64,16 @@
         </div>
 
         <div class="modal-body">
-          <h5 style='color: #fff; text-transform: capitalize;'>
-            Online Classes Timing
-          </h5>
-          <p style='color: #fff;'>
-            1st session( teaching and learning) - 10 a.m. to 2 p.m. <br>
-            2nd session(queries and submission) - 4 p.m. to 7 p.m.
-          </p>
+         <?php 
+         if($result->num_rows > 0){
+           while ($row = $result1->fetch_assoc()){
+             echo "<h5 style='color:#fffffff; text-transform: capitalize;'>". $row['title']. "</h5>";
+             echo "<hp style='color:#fffffff;'>". $row['description']. "</p> <hr style='background-color: #ffffff;'>";
+           }
+           } else {
+             echo " No Circulars available";
+           }
+         ?>
         </div>
       </div>
     </div>
@@ -132,7 +148,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<span
@@ -201,8 +217,11 @@
       <div class="row">
         <div class="col-lg-12 col-md-12">
           <marquee style="color: #fff; padding: 8px;">
-            Schools will reopen from 31<sup>st</sup> January 2021
-          </marquee>
+<?php 
+$res = mysqli_fetch_array($result, MYSQLI_NUM);
+echo $res[0];
+?>
+        </marquee>
         </div>
       </div>
     </div>
